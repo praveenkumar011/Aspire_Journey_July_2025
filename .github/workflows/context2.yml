@@ -7,11 +7,11 @@ jobs:
  context:
   runs-on: ubuntu-latest
   steps:
-   -name: print
-    run: |
-     echo 'Actor ${{github.actor}}'
-     echo 'Event ${{github.even_name}}
-     echo 'Reference detail ${{github.ref}}'
-     echo 'sha value ${{github.sha}}'
-     echo 'Run details ${{github.run_id}}
-     echo 'Runner number details $ ${{github.run_number}}'
+   - name: print
+     run: |
+      echo 'Actor ${{github.actor}}'
+      echo 'Event ${{github.even_name}}
+      echo 'Reference detail ${{github.ref}}'
+      echo 'sha value ${{github.sha}}'
+      echo 'Run details ${{github.run_id}}
+      echo 'Runner number details $ ${{github.run_number}}'
