@@ -10,7 +10,7 @@ jobs:
    - name: print
      run: |
       echo 'Actor ${{github.actor}}'
-      echo 'Event ${{github.even_name}}
+      echo 'Event ${{github.event_name}}
       echo 'Reference detail ${{github.ref}}'
       echo 'sha value ${{github.sha}}'
       echo 'Run details ${{github.run_id}}
