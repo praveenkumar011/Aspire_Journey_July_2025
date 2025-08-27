@@ -6,13 +6,13 @@ on:
  push      #Even
 
 jobs:
-  echo-statement:   # job name
+  build-takeanyname:   # job name
     runs-on: ubuntu-latest     #Github hosted runner
     steps:
          - name: ECHO
            run: echo "Welcome to first workflow on ubuntu"
 
-  display-info:
+  depoly-takeanyname:
     runs-on: windows-latest
     steps:
        - name: Echo
