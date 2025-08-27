@@ -1,0 +1,22 @@
+#name of the workflow
+name: MyFristWorkflow
+
+#Trigger
+on:
+ push      #Even
+
+jobs:
+  echo-statement:   # job name
+    runs-on: ubuntu-latest     #Github hosted runner
+    steps:
+         - name: ECHO
+           run: echo "Welcome to first workflow on ubuntu"
+
+  display-info:
+    runs-on: windows-latest
+    steps:
+       - name: Echo
+         run: echo "Welcome to first worklow on window"
+
+    
+        
