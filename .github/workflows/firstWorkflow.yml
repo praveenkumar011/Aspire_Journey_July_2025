@@ -3,7 +3,7 @@ name: MyFristWorkflow
 
 #Trigger
 on:
- push      #Even
+ [push,pull_request]      #Even
 
 jobs:
   build-takeanyname:   # job name
