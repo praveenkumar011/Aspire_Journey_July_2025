@@ -1,0 +1,22 @@
+#name of the workflow
+name: MyFristWorkflow
+
+#Trigger
+on:
+ [push,pull_request]      #Even
+
+jobs:
+  build-takeanyname:   # job name
+    runs-on: ubuntu-latest     #Github hosted runner
+    steps:
+         - name: ECHO
+           run: echo "Welcome to first workflow on ubuntu"
+
+  depoly-takeanyname:
+    runs-on: windows-latest
+    steps:
+       - name: Echo
+         run: echo "Welcome to first worklow on window"
+
+    
+        
